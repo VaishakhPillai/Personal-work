@@ -1,0 +1,72 @@
+2025-07-23 17:14:16,947 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.21:5000
+2025-07-23 17:14:16,948 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-23 17:15:34,771 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.21:5000
+2025-07-23 17:15:34,771 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-23 17:24:29,276 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.219.21:5000
+2025-07-23 17:24:29,276 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-23 17:26:49,022 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-23 17:26:49,022 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-23 17:27:17,377 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-23 17:27:17,378 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-23 17:29:56,647 - INFO - 127.0.0.1 - - [23/Jul/2025 17:29:56] "[32mGET / HTTP/1.1[0m" 302 -
+2025-07-23 17:29:56,663 - INFO - 127.0.0.1 - - [23/Jul/2025 17:29:56] "GET /login HTTP/1.1" 200 -
+2025-07-23 17:29:56,769 - INFO - 127.0.0.1 - - [23/Jul/2025 17:29:56] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-23 17:29:56,835 - INFO - 127.0.0.1 - - [23/Jul/2025 17:29:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-23 17:30:01,831 - INFO - User: test | Action: Login | Status: Success | Details: 
+2025-07-23 17:30:01,833 - INFO - 127.0.0.1 - - [23/Jul/2025 17:30:01] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-23 17:30:01,850 - INFO - 127.0.0.1 - - [23/Jul/2025 17:30:01] "GET /vault HTTP/1.1" 200 -
+2025-07-23 17:30:01,900 - INFO - 127.0.0.1 - - [23/Jul/2025 17:30:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-23 17:34:19,018 - INFO - 127.0.0.1 - - [23/Jul/2025 17:34:19] "[32mGET / HTTP/1.1[0m" 302 -
+2025-07-23 17:34:19,027 - INFO - 127.0.0.1 - - [23/Jul/2025 17:34:19] "GET /login HTTP/1.1" 200 -
+2025-07-23 17:34:19,059 - INFO - 127.0.0.1 - - [23/Jul/2025 17:34:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-23 17:34:24,374 - INFO - User: test | Action: Login | Status: Success | Details: 
+2025-07-23 17:34:24,375 - INFO - 127.0.0.1 - - [23/Jul/2025 17:34:24] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-23 17:34:24,382 - INFO - 127.0.0.1 - - [23/Jul/2025 17:34:24] "GET /vault HTTP/1.1" 200 -
+2025-07-23 17:34:24,430 - INFO - 127.0.0.1 - - [23/Jul/2025 17:34:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-23 17:40:07,215 - INFO - User: test | Action: Login | Status: Fail
+2025-07-23 17:40:14,699 - INFO - User: test | Action: Login | Status: Fail
+2025-07-23 17:40:45,046 - INFO - User: test1 | Action: Register
+2025-07-23 17:40:53,955 - INFO - User: test1 | Action: Login | Status: Success
+2025-07-23 17:41:52,709 - INFO - User: test1 | Action: Malware Analysis | File: File-1.zip | Result: Clean
+2025-07-23 17:42:49,750 - INFO - User: test1 | Action: Malware Analysis | File: c473cb6e7f2727d2aad6c9ed2e9797d3f5ecf3853fe3d2f93476141a62caf232.elf | Result: Clean
+2025-07-23 18:04:56,951 - INFO - User: test1 | Action: Login | Status: Success
+2025-07-23 18:05:49,704 - INFO - User: test1 | Action: Malware Analysis Upload | Status: Success | File: c473cb6e7f2727d2aad6c9ed2e9797d3f5ecf3853fe3d2f93476141a62caf232.elf
+2025-07-23 18:05:50,681 - INFO - User: test1 | Action: Malware Analysis Result | Status: Success | Result: Malicious: 0, Suspicious: 0, Harmless: 0
+2025-07-23 18:05:50,682 - INFO - User: test1 | Action: Malware Analysis | File: c473cb6e7f2727d2aad6c9ed2e9797d3f5ecf3853fe3d2f93476141a62caf232.elf | Result: Malicious: 0, Suspicious: 0, Harmless: 0
+2025-07-23 19:03:33,410 - INFO - User: test1 | Action: Upload | File: Vaishakh_Pillai.jpg
+2025-07-23 19:05:38,141 - INFO - User: test1 | Action: Encrypt | File: fsocity.dic | Method: AES
+2025-07-24 16:21:52,409 - INFO - User: test1 | Action: Login | Status: Success
+2025-07-24 16:31:01,716 - INFO - User: test1 | Action: Decrypt | File: Vaishakh_Pillai.jpg | Method: AES
+2025-07-24 16:32:19,792 - INFO - User: test1 | Action: Malware Analysis Upload | Status: Success | File: c473cb6e7f2727d2aad6c9ed2e9797d3f5ecf3853fe3d2f93476141a62caf232.elf
+2025-07-24 16:32:20,480 - INFO - User: test1 | Action: Malware Analysis Result | Status: Success | Result: Malicious: 0, Suspicious: 0, Harmless: 0
+2025-07-24 16:32:20,480 - INFO - User: test1 | Action: Malware Analysis | File: c473cb6e7f2727d2aad6c9ed2e9797d3f5ecf3853fe3d2f93476141a62caf232.elf | Result: Malicious: 0, Suspicious: 0, Harmless: 0
+2025-07-24 16:34:53,093 - INFO - User: test1 | Action: Malware Analysis Upload | Status: Success | File: c473cb6e7f2727d2aad6c9ed2e9797d3f5ecf3853fe3d2f93476141a62caf232.elf
+2025-07-24 16:34:53,729 - INFO - User: test1 | Action: Malware Analysis Result | Status: Success | Result: Malicious: 33, Suspicious: 0, Harmless: 0
+2025-07-24 16:34:53,730 - INFO - User: test1 | Action: Malware Analysis | File: c473cb6e7f2727d2aad6c9ed2e9797d3f5ecf3853fe3d2f93476141a62caf232.elf | Result: Malicious: 33, Suspicious: 0, Harmless: 0
+2025-07-24 16:35:47,167 - INFO - User: test1 | Action: Malware Analysis Upload | Status: Success | File: c473cb6e7f2727d2aad6c9ed2e9797d3f5ecf3853fe3d2f93476141a62caf232.elf
+2025-07-24 16:35:47,799 - INFO - User: test1 | Action: Malware Analysis Result | Status: Success | Result: Malicious: 33, Suspicious: 0, Harmless: 0
+2025-07-24 16:35:47,800 - INFO - User: test1 | Action: Malware Analysis | File: c473cb6e7f2727d2aad6c9ed2e9797d3f5ecf3853fe3d2f93476141a62caf232.elf | Result: Malicious: 33, Suspicious: 0, Harmless: 0
+2025-07-24 16:40:23,588 - ERROR - User: test1 | Action: Malware Analysis Upload | Status: Failure | Reason: {"error": {"code": "ConflictError", "message": "Deadline exceeded retrieving concurrent execution result for 0578d5809fd7c1b215aeb27414e54515"}}
+2025-07-24 16:40:23,589 - INFO - User: test1 | Action: Malware Analysis | File: c473cb6e7f2727d2aad6c9ed2e9797d3f5ecf3853fe3d2f93476141a62caf232.elf | Result: File upload failed. Check your API key or rate limits.
+2025-07-24 16:47:34,351 - INFO - User: test1 | Action: Logout
+2025-07-24 16:48:10,986 - INFO - User: test1 | Action: Login | Status: Success
+2025-07-24 16:53:26,335 - INFO - User: test1 | Action: Malware Analysis Upload | Status: Success | File: c473cb6e7f2727d2aad6c9ed2e9797d3f5ecf3853fe3d2f93476141a62caf232.elf
+2025-07-24 16:53:27,176 - INFO - User: test1 | Action: Malware Analysis Result | Status: Success | Result: Malicious: 0, Suspicious: 0, Harmless: 0
+2025-07-24 16:53:27,176 - INFO - User: test1 | Action: Malware Analysis | File: c473cb6e7f2727d2aad6c9ed2e9797d3f5ecf3853fe3d2f93476141a62caf232.elf | Result: Malicious: 0, Suspicious: 0, Harmless: 0
+2025-07-24 16:54:27,510 - INFO - User: test1 | Action: Malware Analysis Upload | Status: Success | File: c473cb6e7f2727d2aad6c9ed2e9797d3f5ecf3853fe3d2f93476141a62caf232.elf
+2025-07-24 16:54:29,584 - INFO - User: test1 | Action: Malware Analysis Result | Status: Success | Result: Malicious: 0, Suspicious: 0, Harmless: 0
+2025-07-24 16:54:29,584 - INFO - User: test1 | Action: Malware Analysis | File: c473cb6e7f2727d2aad6c9ed2e9797d3f5ecf3853fe3d2f93476141a62caf232.elf | Result: Malicious: 0, Suspicious: 0, Harmless: 0
+2025-07-24 16:56:14,027 - INFO - User: test1 | Action: Malware Analysis Upload | Status: Success | File: c473cb6e7f2727d2aad6c9ed2e9797d3f5ecf3853fe3d2f93476141a62caf232.elf
+2025-07-24 16:56:14,761 - INFO - User: test1 | Action: Malware Analysis Result | Status: Success | Result: Malicious: 33, Suspicious: 0, Harmless: 0
+2025-07-24 16:56:14,762 - INFO - User: test1 | Action: Malware Analysis | File: c473cb6e7f2727d2aad6c9ed2e9797d3f5ecf3853fe3d2f93476141a62caf232.elf | Result: Malicious: 33, Suspicious: 0, Harmless: 0
