@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+<div style="max-width: 800px; margin: 2rem auto; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+    <!-- Profile Info Card -->
+    <div
+        style="padding: 2rem; background: #ffffff; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); margin-bottom: 2rem;">
+        <h2 style="margin-bottom: 1.5rem; text-align: center;">👤 Profile</h2>
+        <div style="line-height: 1.8; font-size: 1.05rem; color: #333;">
+            <p><strong>Username:</strong> Axel</p>
+            <p><strong>Email:</strong> axel12@gmail.com</p>
+            <p><strong>Department:</strong> Student</p>
+        </div>
+    </div>
+
+    <!-- Uploads Section -->
+    <div style="padding: 2rem; background: #ffffff; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+        <h3 style="margin-bottom: 1rem;">📂 Your Uploaded Files</h3>
+
+        {% if files %}
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+            {% for file in files %}
+            <div
+                style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background-color: #f9f9f9; border-radius: 6px; border: 1px solid #e0e0e0;">
+                <span style="font-weight: 500; color: #333;">{{ file.filename }}</span>
+                <div style="display: flex; gap: 0.5rem;">
+                    <a href="{{ url_for('download', filename=file.filename) }}">
+                        <button
+                            style="padding: 6px 10px; background-color: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer;">Download</button>
+                    </a>
+                    <a href="{{ url_for('analyze', filename=file.filename) }}">
+                        <button
+                            style="padding: 6px 10px; background-color: #2ecc71; color: white; border: none; border-radius: 4px; cursor: pointer;">View
+                            Analysis</button>
+                    </a>
+                    <form action="{{ url_for('delete_file', filename=file.filename) }}" method="POST"
+                        style="margin: 0;">
+                        <button type="submit"
+                            style="padding: 6px 10px; background-color: #e74c3c; color: white; border: none; border-radius: 4px; cursor: pointer;">Delete</button>
+                    </form>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p style="color: #888;">No uploads yet.</p>
+        {% endif %}
+    </div>
+
+    <!-- Logout -->
+    <div style="text-align: center; margin-top: 2rem;">
+        <a href="/logout">
+            <button
+                style="background-color: #e74c3c; color: white; border: none; padding: 10px 16px; border-radius: 6px; cursor: pointer;">
+                Logout
+            </button>
+        </a>
+    </div>
+</div>
+{% endblock %}

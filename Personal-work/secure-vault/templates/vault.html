@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-10">
+    <div class="bg-white w-full max-w-md p-8 rounded-2xl shadow-md text-center">
+        <h2 class="text-2xl font-bold text-gray-800 mb-8">🔐 Evidence Vault System</h2>
+
+        <form method="POST" enctype="multipart/form-data" class="space-y-4">
+            <input type="hidden" name="step" value="choose_action">
+
+            <button type="submit" name="action" value="open_case"
+                class="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-md text-sm font-semibold transition">
+                📂 Open Case
+            </button>
+
+            <button type="submit" name="action" value="upload"
+                class="w-full bg-indigo-500 hover:bg-indigo-600 text-white py-2 rounded-md text-sm font-semibold transition">
+                ⬆️ Upload Evidence File
+            </button>
+
+            <button type="submit" name="action" value="view_files"
+                class="w-full bg-gray-500 hover:bg-gray-600 text-white py-2 rounded-md text-sm font-semibold transition">
+                📁 View Evidence Files
+            </button>
+
+            <button type="submit" name="action" value="encrypt"
+                class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-md text-sm font-semibold transition">
+                🔐 Encrypt File
+            </button>
+
+            <button type="submit" name="action" value="decrypt"
+                class="w-full bg-yellow-500 hover:bg-yellow-600 text-white py-2 rounded-md text-sm font-semibold transition">
+                🔓 Decrypt File
+            </button>
+
+            <button type="submit" name="action" value="analyze"
+                class="w-full bg-cyan-500 hover:bg-cyan-600 text-white py-2 rounded-md text-sm font-semibold transition">
+                🧪 Malware Analysis
+            </button>
+
+            <button type="submit" name="action" value="view_logs"
+                class="w-full bg-purple-500 hover:bg-purple-600 text-white py-2 rounded-md text-sm font-semibold transition">
+                📜 View Vault Logs
+            </button>
+        </form>
+
+        <div class="mt-6">
+            <a href="/logout"
+                class="inline-block bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-md text-sm font-medium transition">
+                🚪 Logout
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

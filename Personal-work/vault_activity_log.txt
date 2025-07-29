@@ -1,0 +1,22 @@
+2025-07-27 22:18:59,913 - INFO - User: test | Action: Login | Status: Fail
+2025-07-27 22:19:07,633 - INFO - User: test1 | Action: Login | Status: Success
+2025-07-27 22:19:31,999 - INFO - User: test1 | Action: Encrypt | File: Vaishakh_Resume.pdf | Method: AES
+2025-07-27 22:19:46,094 - INFO - User: test1 | Action: Malware Analysis Upload | Status: Success | File: Vaishakh_Resume.pdf
+2025-07-27 22:19:46,631 - INFO - User: test1 | Action: Malware Analysis Result | Status: Success | Result: Malicious: 0, Suspicious: 0, Harmless: 0
+2025-07-27 22:19:46,632 - INFO - User: test1 | Action: Malware Analysis | File: Vaishakh_Resume.pdf | Result: Malicious: 0, Suspicious: 0, Harmless: 0
+2025-07-28 16:22:11,077 - INFO - User: test1 | Action: Login | Status: Success
+2025-07-28 16:33:51,811 - INFO - User: test1 | Action: Malware Analysis Upload | Status: Success | File: test_upload_and_analyze.py
+2025-07-28 16:33:52,683 - INFO - User: test1 | Action: Malware Analysis Result | Status: Success | Result: Malicious: 0, Suspicious: 0, Harmless: 0
+2025-07-28 16:33:52,684 - INFO - User: test1 | Action: Malware Analysis | File: test_upload_and_analyze.py | Result: Malicious: 0, Suspicious: 0, Harmless: 0
+2025-07-28 16:37:35,797 - INFO - User: test1 | Action: Malware Analysis Upload | Status: Success | File: c473cb6e7f2727d2aad6c9ed2e9797d3f5ecf3853fe3d2f93476141a62caf232.elf
+2025-07-28 16:37:36,655 - INFO - User: test1 | Action: Malware Analysis Result | Status: Success | Result: Malicious: 0, Suspicious: 0, Harmless: 0
+2025-07-28 16:37:36,655 - INFO - User: test1 | Action: Malware Analysis | File: c473cb6e7f2727d2aad6c9ed2e9797d3f5ecf3853fe3d2f93476141a62caf232.elf | Result: Malicious: 0, Suspicious: 0, Harmless: 0
+2025-07-28 16:39:20,271 - INFO - User: test1 | Action: Malware Analysis Upload | Status: Success | File: c473cb6e7f2727d2aad6c9ed2e9797d3f5ecf3853fe3d2f93476141a62caf232.elf
+2025-07-28 16:39:21,089 - INFO - User: test1 | Action: Malware Analysis Result | Status: Success | Result: Malicious: 35, Suspicious: 0, Harmless: 0
+2025-07-28 16:39:21,090 - INFO - User: test1 | Action: Malware Analysis | File: c473cb6e7f2727d2aad6c9ed2e9797d3f5ecf3853fe3d2f93476141a62caf232.elf | Result: Malicious: 35, Suspicious: 0, Harmless: 0
+2025-07-28 17:44:31,211 - INFO - User: test2 logged in
+2025-07-28 18:00:47,933 - INFO - User: test2 logged in
+2025-07-28 18:03:25,370 - INFO - User: test2 logged in
+2025-07-28 18:05:43,928 - INFO - User: test2 logged out
+2025-07-28 18:08:03,856 - INFO - User: test2 logged in
+2025-07-29 16:14:02,273 - INFO - User: test2 logged in

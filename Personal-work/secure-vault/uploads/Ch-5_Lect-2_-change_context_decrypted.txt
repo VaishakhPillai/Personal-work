@@ -1,0 +1,88 @@
+ch-5 Lect-2
+
+
+(/.*) = pirate symbol
+
+/var/www/(/.*)? = httpd_sys_content_t
+that means that any file/folder created inside /var/www/ directory should have that context of httpd_sys_content_t
+
+--> changing selinux context
+
+1) temporary:
+
+chcon = change context
+ Syntax : chcon -t allowable context file/folderpath
+
+chcon -t httpd_sys_content_t /var/www/html/index.
+
+--> database reload 
+restorecon = restore context --> system will make all context according to selinux database
+
+--> so any context that has been changed by chcon command will be reverted if restorecon command is applied on same file.
+
+
+2) Persistant:
+--> to make selinux context of any file persistant we have to make an entry in selinux database
+
+--> to manage selinux database there is a single command "semanage"
+
+--> to add any file/folder context to database: semanage fcontext -a -t allowable context file/folder/path
+
+Syntax: semanage -a -t allowable context file/folder/path
+
+it will create an entry in selinux database but it will not reflect runtime.
+
+to reflect it runtime we have to run restorecon command with following syntax
+
+Syntax: restorecon -v /file/folder path
+
+so by this command system will reload selinux database in runtime and changes will apply.
+
+-----------------------------------------------------------------------------------------------------
+Troubleshoot Selinux Port:
+-------------------------
+if any process is entering into the system by using some port but some how that port for that particular process is not added in the port database of selinux so selinux will prevent that process from entering into the system.
+
+for example: in any httpd (apache) server 
+by default it is working on 80 tcp port and you suppose to configure on 85 tcp port:
+
+step-1 change default port from 80 to 85 in httpd config file which is located in /etc/http/conf/httpd.conf 
+
+step-2 : that particular port should be added into selinux database:
+
+before adding that port to database we need to know the selinux context of that port 
+
+to know httpd port's context we have to enter command 
+
+semanage port -l | grep http
+
+then we can find out that httpd port's context is 
+http_port_t and in that we can see that 85 port is not added so next task is to add that port into that list that we can see along with http_port_t line.
+
+step-3 adding 85 tcp port to selinux database:
+
+semanage port -a -t http_port_t -p tcp 85
+
+so from this command web site should be working on 85 port to verify that we have to make sure that httpd service is running by using systemctl enable httpd.service --now command
+
+to check website is working on by using curl command on terminal
+curl websiteaddress:85 because website is working on 85 tcp port
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

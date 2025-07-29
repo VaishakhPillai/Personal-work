@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="min-h-screen flex items-center justify-center bg-gray-100 px-4 py-10">
+  <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+    <h1 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Register</h1>
+
+    <form method="POST" class="space-y-4">
+      <input 
+        name="username" 
+        placeholder="Username" 
+        required 
+        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400"
+      >
+      <input 
+        type="email" 
+        name="email" 
+        placeholder="Official Email" 
+        required 
+        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400"
+      >
+      <input 
+        name="department" 
+        placeholder="Department" 
+        required 
+        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400"
+      >
+      <input 
+        type="password" 
+        name="password" 
+        placeholder="Password" 
+        required 
+        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400"
+      >
+      <button 
+        type="submit" 
+        class="w-full bg-indigo-500 hover:bg-indigo-600 text-white py-2 rounded-md font-medium transition duration-150"
+      >
+        Register
+      </button>
+    </form>
+
+    <p class="mt-4 text-center text-sm text-gray-600">
+      Already have an account? 
+      <a href="/login" class="text-indigo-500 hover:underline">Login here</a>
+    </p>
+  </div>
+</div>
+{% endblock %}
